@@ -1,23 +1,23 @@
 <Activity mc:Ignorable="sap sap2010"
-    x:Class="Main"
-    sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
-    sap2010:WorkflowViewState.IdRef="ActivityBuilder_1"
-    xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-    xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-    xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
-    xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib"
-    xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common"
-    xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities"
-    xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities"
-    xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities"
-    xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities"
-    xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite"
-    xmlns:ui="http://schemas.uipath.com/workflow/activities"
-    xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform"
-    xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+          x:Class="Main"
+          sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
+          sap2010:WorkflowViewState.IdRef="ActivityBuilder_1"
+          xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+          xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+          xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
+          xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib"
+          xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common"
+          xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities"
+          xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities"
+          xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities"
+          xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities"
+          xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite"
+          xmlns:ui="http://schemas.uipath.com/workflow/activities"
+          xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform"
+          xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -252,20 +252,20 @@
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Project: Automating Employee Onboarding&#xA;Objective: Automate the employee onboarding process for a fictional company, &quot;ABC Corporation.&quot;&#xA;&#xA;Tasks to Automate&#xA;1. Extract employee data: Extract employee data from a database.&#xA;2. Generate offer letter: Generate an offer letter template with employee details.&#xA;3. Create employee ID: Create a unique employee ID and add it to the employee's record.&#xA;4. Assign training sessions: Assign relevant training sessions to the new employee based on their role.&#xA;5. Send welcome email: Send a welcome email to the new employee with their login credentials and onboarding information.&#xA;"
-      DisplayName="Main Sequence"
-      sap:VirtualizedContainerService.HintSize="659.3333333333333,1674"
-      sap2010:WorkflowViewState.IdRef="Sequence_1">
+            DisplayName="Main Sequence"
+            sap:VirtualizedContainerService.HintSize="659.3333333333333,1674"
+            sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection"
-          Name="DatabaseConnection"/>
+                Name="DatabaseConnection"/>
       <Variable x:TypeArguments="sd:DataTable"
-          Name="EmployeeDataTable"/>
+                Name="EmployeeDataTable"/>
       <Variable x:TypeArguments="x:String"
-          Name="EmployeeID"/>
+                Name="EmployeeID"/>
       <Variable x:TypeArguments="scg:List(x:String)"
-          Name="TrainingSessions"/>
+                Name="TrainingSessions"/>
       <Variable x:TypeArguments="ugdm:GDriveRemoteItem"
-          Name="document">
+                Name="document">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:String x:Key="SourceIdRef">CreateDocumentConnections_1</x:String>
@@ -281,77 +281,74 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:DatabaseConnect DisplayName="Extract employee data from a database."
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,92"
-        sap2010:WorkflowViewState.IdRef="DatabaseConnect_1"
-        ProviderName="System.Data.Odbc"
-        ConnectionString="Driver={MySQL ODBC 8.0 ANSI Driver};Server=localhost;Port=3306;Database=abc_corporation;Uid=root;Pwd=Jroot;">
+                        sap:VirtualizedContainerService.HintSize="437.3333333333333,92"
+                        sap2010:WorkflowViewState.IdRef="DatabaseConnect_1"
+                        ProviderName="System.Data.Odbc"
+                        ConnectionString="Driver={MySQL ODBC 8.0 ANSI Driver};Server=localhost;Port=3306;Database=abc_corporation;Uid=root;Pwd=Jroot;">
       <ui:DatabaseConnect.DatabaseConnection>
         <OutArgument x:TypeArguments="ui:DatabaseConnection">
           <CSharpReference x:TypeArguments="ui:DatabaseConnection"
-              sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">DatabaseConnection</CSharpReference>
+                           sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">DatabaseConnection</CSharpReference>
         </OutArgument>
       </ui:DatabaseConnect.DatabaseConnection>
     </ui:DatabaseConnect>
     <ui:ExecuteQuery ContinueOnError="{x:Null}"
-        TimeoutMS="{x:Null}"
-        DisplayName="Execute query to get employee data"
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,148"
-        sap2010:WorkflowViewState.IdRef="ExecuteQuery_1"
-        Sql="SELECT * FROM Employees WHERE EmployeeID = @EmployeeID">
+                     TimeoutMS="{x:Null}"
+                     DisplayName="Execute query to get employee data"
+                     sap:VirtualizedContainerService.HintSize="437.3333333333333,148"
+                     sap2010:WorkflowViewState.IdRef="ExecuteQuery_1"
+                     Sql="SELECT * FROM employee_onboarding_view">
       <ui:ExecuteQuery.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable"
-              sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">EmployeeDataTable</CSharpReference>
+                           sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">EmployeeDataTable</CSharpReference>
         </OutArgument>
       </ui:ExecuteQuery.DataTable>
       <ui:ExecuteQuery.ExistingDbConnection>
         <InArgument x:TypeArguments="ui:DatabaseConnection">
           <CSharpValue x:TypeArguments="ui:DatabaseConnection"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">DatabaseConnection</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">DatabaseConnection</CSharpValue>
         </InArgument>
       </ui:ExecuteQuery.ExistingDbConnection>
-      <ui:ExecuteQuery.Parameters>
-        <scg:Dictionary x:TypeArguments="x:String, Argument"/>
-      </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
     <uga:CreateDocumentConnections ConnectionAccountName="{x:Null}"
-        ContinueOnError="{x:Null}"
-        FolderIdBackup="{x:Reference __ReferenceID0}"
-        ManualEntryParentFolderId="{x:Null}"
-        ParentFolderExisting="{x:Null}"
-        AuthScopesInvalid="False"
-        BrowserParentFolderFriendlyName="My Drive"
-        BrowserParentFolderId="root"
-        ConflictResolution="Replace"
-        ConnectionId="18d512a1-765a-4c1b-95a7-7be027235a3c"
-        DisplayName="Generate an offer letter template with employee details."
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,239.33333333333334"
-        sap2010:WorkflowViewState.IdRef="CreateDocumentConnections_1"
-        ParentFolderInputMode="Browse"
-        UseConnectionService="True">
+                                   ContinueOnError="{x:Null}"
+                                   FolderIdBackup="{x:Reference __ReferenceID0}"
+                                   ManualEntryParentFolderId="{x:Null}"
+                                   ParentFolderExisting="{x:Null}"
+                                   AuthScopesInvalid="False"
+                                   BrowserParentFolderFriendlyName="My Drive"
+                                   BrowserParentFolderId="root"
+                                   ConflictResolution="Replace"
+                                   ConnectionId="18d512a1-765a-4c1b-95a7-7be027235a3c"
+                                   DisplayName="Generate an offer letter template with employee details."
+                                   sap:VirtualizedContainerService.HintSize="437.3333333333333,239.33333333333334"
+                                   sap2010:WorkflowViewState.IdRef="CreateDocumentConnections_1"
+                                   ParentFolderInputMode="Browse"
+                                   UseConnectionService="True">
       <uga:CreateDocumentConnections.DocumentName>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">string.Format("Offer Letter - {0} {1}", EmployeeDataTable.Rows[0]["FirstName"], EmployeeDataTable.Rows[0]["LastName"])</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">string.Format("Offer Letter - {0} {1}", EmployeeDataTable.Rows[0]["first_name"], EmployeeDataTable.Rows[0]["last_name"])</CSharpValue>
         </InArgument>
       </uga:CreateDocumentConnections.DocumentName>
       <uga:CreateDocumentConnections.Item>
         <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}"
-            Existing="{x:Null}"
-            FriendlyName="{x:Null}"
-            FullPath="{x:Null}"
-            IdOrUrl="{x:Null}"
-            ParentId="{x:Null}"
-            ParentIdFriendlyName="{x:Null}"
-            RelativePath="{x:Null}"
-            BrowserId="root"
-            ConnectionKey="18d512a1-765a-4c1b-95a7-7be027235a3c"
-            FullPathHint="My Drive"
-            InputMode="Browse">
+                                Existing="{x:Null}"
+                                FriendlyName="{x:Null}"
+                                FullPath="{x:Null}"
+                                IdOrUrl="{x:Null}"
+                                ParentId="{x:Null}"
+                                ParentIdFriendlyName="{x:Null}"
+                                RelativePath="{x:Null}"
+                                BrowserId="root"
+                                ConnectionKey="18d512a1-765a-4c1b-95a7-7be027235a3c"
+                                FullPathHint="My Drive"
+                                InputMode="Browse">
           <ugam:DriveItemArgument.Backup>
             <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode"
-                x:Name="__ReferenceID0"
-                StoredValue="Browse">
+                             x:Name="__ReferenceID0"
+                             StoredValue="Browse">
               <usau:BackupSlot.BackupValues>
                 <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)"/>
               </usau:BackupSlot.BackupValues>
@@ -360,7 +357,7 @@
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String"
-                  Value=""/>
+                       Value=""/>
             </InArgument>
           </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
@@ -368,44 +365,44 @@
       <uga:CreateDocumentConnections.NewDocument>
         <OutArgument x:TypeArguments="ugdm:GDriveRemoteItem">
           <CSharpReference x:TypeArguments="ugdm:GDriveRemoteItem"
-              sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">document</CSharpReference>
+                           sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">document</CSharpReference>
         </OutArgument>
       </uga:CreateDocumentConnections.NewDocument>
     </uga:CreateDocumentConnections>
     <uga:WriteTextConnections BrowserFileId="{x:Null}"
-        ConnectionAccountName="{x:Null}"
-        ContinueOnError="{x:Null}"
-        File="{x:Reference __ReferenceID2}"
-        FileFriendlyName="{x:Null}"
-        FileIdBackup="{x:Reference __ReferenceID1}"
-        ManualFileId="{x:Null}"
-        Section="{x:Null}"
-        AuthScopesInvalid="False"
-        ConnectionId="8c00e499-4158-4187-84ae-e86949776668"
-        DisplayName="Write employee details to the offer letter"
-        FileInputMode="UseExisting"
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,344"
-        sap2010:WorkflowViewState.IdRef="WriteTextConnections_1"
-        MatchCase="False"
-        MatchMode="Contains"
-        UseConnectionService="True"
-        WriteTextMode="EndOfDocument"
-        WriteTextStyle="NormalText">
+                              ConnectionAccountName="{x:Null}"
+                              ContinueOnError="{x:Null}"
+                              File="{x:Reference __ReferenceID2}"
+                              FileFriendlyName="{x:Null}"
+                              FileIdBackup="{x:Reference __ReferenceID1}"
+                              ManualFileId="{x:Null}"
+                              Section="{x:Null}"
+                              AuthScopesInvalid="False"
+                              ConnectionId="8c00e499-4158-4187-84ae-e86949776668"
+                              DisplayName="Write employee details to the offer letter"
+                              FileInputMode="UseExisting"
+                              sap:VirtualizedContainerService.HintSize="437.3333333333333,344"
+                              sap2010:WorkflowViewState.IdRef="WriteTextConnections_1"
+                              MatchCase="False"
+                              MatchMode="Contains"
+                              UseConnectionService="True"
+                              WriteTextMode="EndOfDocument"
+                              WriteTextStyle="NormalText">
       <uga:WriteTextConnections.Item>
         <ugam:DriveItemArgument BrowserId="{x:Null}"
-            ConnectionDescriptor="{x:Null}"
-            ConnectionKey="{x:Null}"
-            FriendlyName="{x:Null}"
-            FullPath="{x:Null}"
-            IdOrUrl="{x:Null}"
-            ParentId="{x:Null}"
-            ParentIdFriendlyName="{x:Null}"
-            RelativePath="{x:Null}"
-            InputMode="UseExisting">
+                                ConnectionDescriptor="{x:Null}"
+                                ConnectionKey="{x:Null}"
+                                FriendlyName="{x:Null}"
+                                FullPath="{x:Null}"
+                                IdOrUrl="{x:Null}"
+                                ParentId="{x:Null}"
+                                ParentIdFriendlyName="{x:Null}"
+                                RelativePath="{x:Null}"
+                                InputMode="UseExisting">
           <ugam:DriveItemArgument.Backup>
             <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode"
-                x:Name="__ReferenceID1"
-                StoredValue="UseExisting">
+                             x:Name="__ReferenceID1"
+                             StoredValue="UseExisting">
               <usau:BackupSlot.BackupValues>
                 <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)"/>
               </usau:BackupSlot.BackupValues>
@@ -413,21 +410,21 @@
           </ugam:DriveItemArgument.Backup>
           <ugam:DriveItemArgument.Existing>
             <InArgument x:TypeArguments="ugdm:GDriveRemoteItem"
-                x:Name="__ReferenceID2">
+                        x:Name="__ReferenceID2">
               <CSharpValue x:TypeArguments="ugdm:GDriveRemoteItem"
-                  sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">document</CSharpValue>
+                           sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">document</CSharpValue>
             </InArgument>
           </ugam:DriveItemArgument.Existing>
           <ugam:DriveItemArgument.FullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String"
-                  Value=""/>
+                       Value=""/>
             </InArgument>
           </ugam:DriveItemArgument.FullPathHint>
           <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String"
-                  Value=""/>
+                       Value=""/>
             </InArgument>
           </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
@@ -435,37 +432,37 @@
       <uga:WriteTextConnections.Text>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">string.Format("Dear {0} {1},\n\nWe are pleased to offer you the position of {2} at ABC Corporation.", EmployeeDataTable.Rows[0]["FirstName"], EmployeeDataTable.Rows[0]["LastName"], EmployeeDataTable.Rows[0]["JobTitle"])</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">string.Format("Dear {0} {1},\n\nWe are pleased to offer you the position of {2} at ABC Corporation.", EmployeeDataTable.Rows[0]["first_name"], EmployeeDataTable.Rows[0]["last_name"], EmployeeDataTable.Rows[0]["role_name"])</CSharpValue>
         </InArgument>
       </uga:WriteTextConnections.Text>
     </uga:WriteTextConnections>
     <Assign DisplayName="Create a unique employee ID and add it to the employee's record."
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,117.33333333333333"
-        sap2010:WorkflowViewState.IdRef="Assign_1">
+            sap:VirtualizedContainerService.HintSize="437.3333333333333,117.33333333333333"
+            sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String"
-              sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">EmployeeID</CSharpReference>
+                           sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">EmployeeID</CSharpReference>
         </OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Guid.NewGuid().ToString()</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Guid.NewGuid().ToString()</CSharpValue>
         </InArgument>
       </Assign.Value>
     </Assign>
     <ui:ExecuteQuery ContinueOnError="{x:Null}"
-        DataTable="{x:Null}"
-        TimeoutMS="{x:Null}"
-        DisplayName="Update the employee record with the new EmployeeID"
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,148"
-        sap2010:WorkflowViewState.IdRef="ExecuteQuery_2"
-        Sql="UPDATE Employees SET EmployeeID = @EmployeeID WHERE EmployeeID = @OriginalEmployeeID">
+                     DataTable="{x:Null}"
+                     TimeoutMS="{x:Null}"
+                     DisplayName="Update the employee record with the new EmployeeID"
+                     sap:VirtualizedContainerService.HintSize="437.3333333333333,148"
+                     sap2010:WorkflowViewState.IdRef="ExecuteQuery_2"
+                     Sql="UPDATE employees SET employee_id = @EmployeeID WHERE employee_id = @OriginalEmployeeID">
       <ui:ExecuteQuery.ExistingDbConnection>
         <InArgument x:TypeArguments="ui:DatabaseConnection">
           <CSharpValue x:TypeArguments="ui:DatabaseConnection"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">DatabaseConnection</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">DatabaseConnection</CSharpValue>
         </InArgument>
       </ui:ExecuteQuery.ExistingDbConnection>
       <ui:ExecuteQuery.Parameters>
@@ -473,48 +470,48 @@
       </ui:ExecuteQuery.Parameters>
     </ui:ExecuteQuery>
     <Assign DisplayName="Assign relevant training sessions to the new employee based on their role."
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,117.33333333333333"
-        sap2010:WorkflowViewState.IdRef="Assign_2">
+            sap:VirtualizedContainerService.HintSize="437.3333333333333,117.33333333333333"
+            sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:String)">
           <CSharpReference x:TypeArguments="scg:List(x:String)"
-              sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">TrainingSessions</CSharpReference>
+                           sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">TrainingSessions</CSharpReference>
         </OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="scg:List(x:String)">
           <CSharpValue x:TypeArguments="scg:List(x:String)"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">EmployeeDataTable.Rows[0]["JobTitle"].ToString() == "Developer" ? new List&lt;string&gt; { "Code of Conduct", "Development Environment Setup", "Secure Coding" } : EmployeeDataTable.Rows[0]["JobTitle"].ToString() == "HR" ? new List&lt;string&gt; { "Code of Conduct", "HR Policies", "Onboarding Process" } : new List&lt;string&gt; { "Code of Conduct", "General Orientation" }</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">EmployeeDataTable.Rows[0]["role_name"].ToString() == "Developer" ? new List&lt;string&gt; { "Code of Conduct", "Development Environment Setup", "Secure Coding" } : EmployeeDataTable.Rows[0]["role_name"].ToString() == "HR" ? new List&lt;string&gt; { "Code of Conduct", "HR Policies", "Onboarding Process" } : new List&lt;string&gt; { "Code of Conduct", "General Orientation" }</CSharpValue>
         </InArgument>
       </Assign.Value>
     </Assign>
     <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}"
-        ArgumentAttachments="{x:Null}"
-        AttachmentPaths="{x:Null}"
-        Bcc="{x:Null}"
-        Cc="{x:Null}"
-        ConnectionAccountName="{x:Null}"
-        ContinueOnError="{x:Null}"
-        ReplyTo="{x:Null}"
-        SingleAttachment="{x:Null}"
-        TextBody="{x:Null}"
-        AttachmentInputMode="UseExisting"
-        AuthScopesInvalid="False"
-        ConnectionId="7ca30469-1e7c-4235-a8b4-077cf1b54647"
-        DisplayName="Send a welcome email to the new employee with their login credentials and onboarding information."
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,397.3333333333333"
-        sap2010:WorkflowViewState.IdRef="SendEmailConnections_1"
-        Importance="Normal"
-        InputType="TEXT"
-        SaveAsDraft="True"
-        Subject="Welcome to ABC Corporation!"
-        UseConnectionService="True">
+                              ArgumentAttachments="{x:Null}"
+                              AttachmentPaths="{x:Null}"
+                              Bcc="{x:Null}"
+                              Cc="{x:Null}"
+                              ConnectionAccountName="{x:Null}"
+                              ContinueOnError="{x:Null}"
+                              ReplyTo="{x:Null}"
+                              SingleAttachment="{x:Null}"
+                              TextBody="{x:Null}"
+                              AttachmentInputMode="UseExisting"
+                              AuthScopesInvalid="False"
+                              ConnectionId="7ca30469-1e7c-4235-a8b4-077cf1b54647"
+                              DisplayName="Send a welcome email to the new employee with their login credentials and onboarding information."
+                              sap:VirtualizedContainerService.HintSize="437.3333333333333,397.3333333333333"
+                              sap2010:WorkflowViewState.IdRef="SendEmailConnections_1"
+                              Importance="Normal"
+                              InputType="TEXT"
+                              SaveAsDraft="True"
+                              Subject="Welcome to ABC Corporation!"
+                              UseConnectionService="True">
       <uga:SendEmailConnections.Attachments>
         <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)"/>
       </uga:SendEmailConnections.Attachments>
       <uga:SendEmailConnections.AttachmentsBackup>
         <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode"
-            StoredValue="UseExisting">
+                         StoredValue="UseExisting">
           <usau:BackupSlot.BackupValues>
             <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)"/>
           </usau:BackupSlot.BackupValues>
@@ -523,12 +520,12 @@
       <uga:SendEmailConnections.Body>
         <InArgument x:TypeArguments="x:String">
           <CSharpValue x:TypeArguments="x:String"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">string.Format("Dear {0} {1},\n\nWelcome to ABC Corporation! Your login credentials are:\n\nUsername: {2}\nPassword: {3}\n\nPlease complete the following training sessions:\n\n{4}", EmployeeDataTable.Rows[0]["FirstName"], EmployeeDataTable.Rows[0]["LastName"], EmployeeDataTable.Rows[0]["Email"], "TemporaryPassword", string.Join("\n", TrainingSessions))</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">string.Format("Dear {0} {1},\n\nWelcome to ABC Corporation! Your login credentials are:\n\nUsername: {2}\nPassword: {3}\n\nPlease complete the following training sessions:\n\n{4}", EmployeeDataTable.Rows[0]["first_name"], EmployeeDataTable.Rows[0]["last_name"], EmployeeDataTable.Rows[0]["email"], "TemporaryPassword", string.Join("\n", TrainingSessions))</CSharpValue>
         </InArgument>
       </uga:SendEmailConnections.Body>
       <uga:SendEmailConnections.InputTypeBackup>
         <usau:BackupSlot x:TypeArguments="ugage:BodyInputType"
-            StoredValue="TEXT">
+                         StoredValue="TEXT">
           <usau:BackupSlot.BackupValues>
             <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)"/>
           </usau:BackupSlot.BackupValues>
@@ -537,17 +534,17 @@
       <uga:SendEmailConnections.To>
         <InArgument x:TypeArguments="scg:IEnumerable(x:String)">
           <CSharpValue x:TypeArguments="scg:IEnumerable(x:String)"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">new[] { EmployeeDataTable.Rows[0]["Email"].ToString() }</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">new[] { EmployeeDataTable.Rows[0]["email"].ToString() }</CSharpValue>
         </InArgument>
       </uga:SendEmailConnections.To>
     </uga:SendEmailConnections>
     <ui:DatabaseDisconnect DisplayName="Disconnect from the database"
-        sap:VirtualizedContainerService.HintSize="437.3333333333333,48"
-        sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1">
+                           sap:VirtualizedContainerService.HintSize="437.3333333333333,48"
+                           sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1">
       <ui:DatabaseDisconnect.DatabaseConnection>
         <InArgument x:TypeArguments="ui:DatabaseConnection">
           <CSharpValue x:TypeArguments="ui:DatabaseConnection"
-              sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">DatabaseConnection</CSharpValue>
+                       sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">DatabaseConnection</CSharpValue>
         </InArgument>
       </ui:DatabaseDisconnect.DatabaseConnection>
     </ui:DatabaseDisconnect>
