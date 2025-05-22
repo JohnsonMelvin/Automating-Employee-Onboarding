@@ -1,0 +1,60 @@
+{
+  "name": "Automating Employee Onboarding",
+  "projectId": "24f3a9b1-0908-4f90-8189-354db786539a",
+  "description": "Project: Automating Employee Onboarding\nObjective: Automate the employee onboarding process for a fictional company, \"ABC Corporation.\"\n\nTasks to Automate\n1. Extract employee data: Extract employee data from a database.\n2. Generate offer letter: Generate an offer letter template with employee details.\n3. Create employee ID: Create a unique employee ID and add it to the employee's record.\n4. Assign training sessions: Assign relevant training sessions to the new employee based on their role.\n5. Se",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Database.Activities": "1.10.0",
+    "UiPath.GSuite.Activities": "3.0.10",
+    "UiPath.System.Activities": "[25.4.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.167.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "4f4263b7-e42b-41ef-8abe-c33bbd7707be",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
